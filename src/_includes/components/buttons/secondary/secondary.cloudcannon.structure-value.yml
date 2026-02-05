@@ -1,0 +1,11 @@
+label: Secondary Button
+icon: smart_button
+tags:
+  - Button
+  - Outline
+value:
+  button_text: Button Text
+  button_icon: null
+  button_link: ""
+  text_color: "#034ad8"
+  hover_brightness: 0.85

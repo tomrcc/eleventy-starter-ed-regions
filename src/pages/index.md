@@ -16,7 +16,7 @@ layout: layouts/component-page.html
 permalink: /
 eleventyExcludeFromCollections: false
 content_blocks:
-  - _bookshop_name: hero
+  - _name: components/hero/hero
     background_color: '#ffffff'
     heading:
       heading_text: Eleventy Bookshop Starter
@@ -36,20 +36,20 @@ content_blocks:
         piece of paper with a large 'A', and are next to some buttons on the
         screen.
     buttons:
-      - _bookshop_name: buttons/primary
+      - _name: components/buttons/primary/primary
         button_text: GitHub
         button_icon: fa-brands fa-github
         button_link: https://github.com/CloudCannon/eleventy-starter/
         background_color: '#034ad8'
         hover_brightness: 0.85
         text_color: '#ffffff'
-      - _bookshop_name: buttons/secondary
+      - _name: components/buttons/secondary/secondary
         button_text: CloudCannon
         button_icon: CloudCannon
         button_link: https://www.cloudcannon.com
         text_color: '#034ad8'
         hover_brightness: 0.95
-  - _bookshop_name: left-right
+  - _name: components/left-right/left-right
     background_color: '#ffffff'
     heading:
       heading_text: Keep what you need. Delete the rest.
@@ -89,14 +89,14 @@ content_blocks:
         and is waving.
     flipped: true
     button:
-      _bookshop_name: buttons/primary
+      _name: components/buttons/primary/primary
       button_text: GitHub
       button_icon: fa-brands fa-github
       button_link: https://github.com/CloudCannon/eleventy-starter/
       background_color: '#034ad8'
       hover_brightness: 0.85
       text_color: '#ffffff'
-  - _bookshop_name: left-right
+  - _name: components/left-right/left-right
     background_color: '#ffffff'
     flipped: false
     heading:
@@ -124,7 +124,7 @@ content_blocks:
         the laptop, and one is in their pocket. On the laptop screen is an
         illustration of the world.
     button:
-      _bookshop_name: buttons/primary
+      _name: components/buttons/primary/primary
       button_text: GitHub
       button_icon: fa-brands fa-github
       button_link: https://github.com/CloudCannon/eleventy-starter/

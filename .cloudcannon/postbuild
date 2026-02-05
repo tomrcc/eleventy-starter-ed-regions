@@ -1,2 +1,0 @@
-npx @bookshop/generate
-echo "$ELEVENTY_ENV"

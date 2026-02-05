@@ -1,0 +1,10 @@
+label: Image
+icon: image
+tags: []
+value:
+  image_path: null
+  alt_text: null
+  image_sizes: null
+_inputs:
+  image_sizes:
+    hidden: true

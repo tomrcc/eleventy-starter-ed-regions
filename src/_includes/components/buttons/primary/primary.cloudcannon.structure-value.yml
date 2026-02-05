@@ -1,0 +1,12 @@
+label: Primary Button
+icon: smart_button
+tags:
+  - Button
+  - Background color
+value:
+  button_text: Button Text
+  button_icon: null
+  button_link: ""
+  background_color: "#034ad8"
+  hover_brightness: 0.85
+  text_color: "#FFFFF"

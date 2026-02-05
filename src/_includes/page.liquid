@@ -1,0 +1,6 @@
+<div>
+  {% for block in content_blocks %}
+    {% bind_include block._name
+      , block %}
+  {% endfor %}
+</div>

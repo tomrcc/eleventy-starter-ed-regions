@@ -421,7 +421,7 @@ _snippets:
       gallery:
         image: /assets/images/snippet-previews/alert.preview.webp
     definitions:
-      component_name: snippets/alert
+      component_name: components/snippets/alert/alert
       named_args:
         - editor_key: background_color
           type: string
