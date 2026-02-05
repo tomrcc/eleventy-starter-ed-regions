@@ -1,4 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const renderContent = require("./bookshop/renderContent.js")
 
 /* 11ty config imports */
 const image_shortcode = require("./_11ty_config/image_shortcode");
@@ -78,12 +79,19 @@ module.exports = async function (eleventyConfig) {
           name: 'image',
           file: '_11ty_config/image_fallback.js'
         }
+      ],
+      filters: [
+        {
+          name: 'renderContent',
+          file: 'bookshop/renderContent.js'
+        }
       ]
     }
   });
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(RenderPlugin);
+  eleventyConfig.addFilter("renderContent", renderContent)
 
   // Custom Shortcodes
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
