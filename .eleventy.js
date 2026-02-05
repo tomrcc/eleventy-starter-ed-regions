@@ -33,43 +33,43 @@ module.exports = async function (eleventyConfig) {
       component_extensions: [".liquid", ".html"],
       components: [
         {
-          name: 'snippets/video/video.liquid',
+          name: 'components/snippets/video/video',
           file: 'src/_includes/components/snippets/video/video.liquid',
         },
         {
-          name: 'snippets/tint/tint.liquid',
+          name: 'components/snippets/tint/tint',
           file: 'src/_includes/components/snippets/tint/tint.liquid',
         },
         {
-          name: 'snippets/file/file.liquid',
+          name: 'components/snippets/file/file',
           file: 'src/_includes/components/snippets/file/file.liquid',
         },
         {
-          name: 'snippets/alert/alert.liquid',
+          name: 'components/snippets/alert/alert',
           file: 'src/_includes/components/snippets/alert/alert.liquid',
         },
         {
-          name: 'left-right/left-right.liquid',
+          name: 'components/left-right/left-right',
           file: 'src/_includes/components/left-right/left-right.liquid',
         },
         {
-          name: 'image/image.liquid',
+          name: 'components/image/image',
           file: 'src/_includes/components/image/image.liquid',
         },
         {
-          name: 'icon/icon.liquid',
+          name: 'components/icon/icon',
           file: 'src/_includes/components/icon/icon.liquid',
         },
         {
-          name: 'hero/hero.liquid',
+          name: 'components/hero/hero',
           file: 'src/_includes/components/hero/hero.liquid',
         },
         {
-          name: 'buttons/secondary/secondary.liquid',
+          name: 'components/buttons/secondary/secondary',
           file: 'src/_includes/components/buttons/secondary/secondary.liquid',
         },
         {
-          name: 'buttons/primary/primary.liquid',
+          name: 'components/buttons/primary/primary',
           file: 'src/_includes/components/buttons/primary/primary.liquid',
         }
       ]
