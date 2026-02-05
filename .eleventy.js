@@ -72,6 +72,12 @@ module.exports = async function (eleventyConfig) {
           name: 'components/buttons/primary/primary',
           file: 'src/_includes/components/buttons/primary/primary.liquid',
         }
+      ],
+      customTags: [
+        {
+          name: 'image',
+          file: '_11ty_config/image_fallback.js'
+        }
       ]
     }
   });
