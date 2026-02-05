@@ -1,7 +1,8 @@
 <div
   data-editable="array"
   data-component-key="_name"
-  data-id-key="_name">
+  data-id-key="_name"
+  data-prop="content_blocks">
   {% for block in content_blocks %}
     <editable-array-item data-component="{{ block._name }}" data-id="{{ block._name }}">
       {% bind_include block._name
