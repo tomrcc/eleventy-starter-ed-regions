@@ -14,7 +14,7 @@
         </h2>
         <div class="mb-4 markdown-text" style="color: {{text.color}};">
           {% if text.markdown_content %}
-            {{ text.markdown_content | renderContent }}{% endif %}
+            {{ text.markdown_content | markdownify }}{% endif %}
         </div>
         {% if button %}
           {% bind_include button._name
@@ -30,7 +30,7 @@
         </h2>
         <div class="mb-4 markdown-text" style="color: {{text.color}};">
           {% if text.markdown_content %}
-            {{ text.markdown_content | renderContent }}{% endif %}
+            {{ text.markdown_content | markdownify }}{% endif %}
         </div>
         {% if button %}
           {% bind_include button._name

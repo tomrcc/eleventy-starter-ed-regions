@@ -1,5 +1,4 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const renderContent = require("./bookshop/renderContent.js")
 
 /* 11ty config imports */
 const image_shortcode = require("./_11ty_config/image_shortcode");
@@ -7,6 +6,7 @@ const image_shortcode = require("./_11ty_config/image_shortcode");
 // biome-ignore lint/complexity/useArrowFunction: <explanation>
 module.exports = async function (eleventyConfig) {
   const { RenderPlugin } = await import("@11ty/eleventy");
+  const { default: markdownify } = await import("./_11ty_config/markdownify.mjs")
   const { default: editableRegions } = await import("@cloudcannon/editable-regions/eleventy");
 
   eleventyConfig.addPassthroughCopy("src/assets/images");
@@ -82,8 +82,8 @@ module.exports = async function (eleventyConfig) {
       ],
       filters: [
         {
-          name: 'renderContent',
-          file: 'bookshop/renderContent.js'
+          name: 'markdownify',
+          file: '_11ty_config/markdownify.mjs'
         }
       ]
     }
@@ -91,7 +91,7 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(RenderPlugin);
-  eleventyConfig.addFilter("renderContent", renderContent)
+  eleventyConfig.addLiquidFilter("markdownify", markdownify)
 
   // Custom Shortcodes
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
